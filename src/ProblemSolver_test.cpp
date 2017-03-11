@@ -16,13 +16,14 @@ const char b[] = "bbbb.iloveyou.bbbb";
 const char expected[] = ".iloveyou.";
 
 void test_1() {
+	const char *pTestName = "Test 1 (for C++ API)";
 	string result;
 
 	result = ProblemSolver::FindLongestCommonToken(a, b);
 	if (result.compare(expected) == 0) {
-		cout << "Test 1: Pass" << endl;
+		cout << pTestName << ": Pass" << endl;
 	} else {
-		cout << "Test 1: Failed" << endl;
+		cout << pTestName << ": Failed" << endl;
 		cout << "Expected result is \"" << expected << "\"" << endl;
 		cout << "Actual result is \"" << result << "\"" << endl;
 	}
