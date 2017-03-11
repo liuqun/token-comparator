@@ -11,6 +11,8 @@
 
 #include <string>
 
+namespace ProblemSolver {
 extern std::string FindLongestCommonToken(std::string a, std::string b);
+}
 
 #endif /* PROBLEMSOLVER_H_ */

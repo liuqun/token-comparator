@@ -13,7 +13,7 @@ void test_1() {
 	string b("bbbb.iloveyou.bbbb");
 	string expected(".iloveyou.");
 
-	string result = FindLongestCommonToken(a, b);
+	string result = ProblemSolver::FindLongestCommonToken(a, b);
 	if (result.compare(expected) == 0) {
 		cout << "Test 1: Pass" << endl;
 	} else {

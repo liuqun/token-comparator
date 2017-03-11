@@ -8,7 +8,7 @@ using std::string;
 
 #include "ProblemSolver.h"
 
-string FindLongestCommonToken(string a, string b) {
+string ProblemSolver::FindLongestCommonToken(string a, string b) {
 	string result;
 	string *pShorter;
 	string *pLonger;
