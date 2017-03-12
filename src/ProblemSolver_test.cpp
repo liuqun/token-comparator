@@ -15,6 +15,7 @@ int main()
 {
 	test_1();
 	test_1_c_api();
+	test_2_recursively_find_longest_common_token();
 	return (0);
 }
 
@@ -58,5 +59,19 @@ void test_1_c_api() {
 	}
 	if (result) {
 		FreeToken(result);
+	}
+}
+
+void test_2_recursively_find_longest_common_token() {
+	const char *pTestName = "Test 2: Test C++ API RecursivelyFindLongestCommonToken()";
+	string result;
+
+	result = ProblemSolver::FindLongestCommonToken_Recursively(a, b);
+	if (result.compare(expected) == 0) {
+		cout << pTestName << ": Pass" << endl;
+	} else {
+		cout << pTestName << ": Failed" << endl;
+		cout << "Expected result is \"" << expected << "\"" << endl;
+		cout << "Actual result is \"" << result << "\"" << endl;
 	}
 }

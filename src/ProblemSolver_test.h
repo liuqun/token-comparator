@@ -10,6 +10,7 @@ extern "C" {
 #endif
 
 void test_1();
+void test_2_recursively_find_longest_common_token();
 void test_1_c_api();
 
 #ifdef __cplusplus
