@@ -19,8 +19,8 @@ int main()
 	return (0);
 }
 
-const char a[] = "aaaa.iloveyou.aaaa";
-const char b[] = "bbbb.iloveyou.bbbb";
+const char a[] = ".iloveyou.";
+const char b[] = ".iloveyou.";
 const char expected[] = ".iloveyou.";
 
 void test_1() {
